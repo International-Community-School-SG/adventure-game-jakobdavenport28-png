@@ -45,7 +45,7 @@ public class Quest
     */
     public static void gameLoop() {
     	
-    	String prompt = "What would you like to do first?";
+    	String prompt = "What would you like to do next? If you do not know the commands type help.";
     	while(player.isPlaying()){
     		String[] order = getInput(prompt);
     		prompt = "What would you like to do next?";

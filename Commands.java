@@ -1,3 +1,4 @@
+
 import java.util.Arrays;
 
 public class Commands{
@@ -175,7 +176,11 @@ public class Commands{
      * Help the player out by listing the valid commands
      */
 	private boolean help(String[] words, Player player, World world) {
-		System.out.println(validCommands);
+		System.out.println("Here is a list of commands:");
+		for(String comm: validCommands)
+		{
+			System.out.println(comm);
+		}
 		return true;
 	}
 
